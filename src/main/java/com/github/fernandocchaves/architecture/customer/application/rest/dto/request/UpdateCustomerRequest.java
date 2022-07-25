@@ -13,6 +13,7 @@ import javax.validation.constraints.Size;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UpdateCustomerRequest {
+
     @NotBlank
     @Size(max = 255)
     private String name;
