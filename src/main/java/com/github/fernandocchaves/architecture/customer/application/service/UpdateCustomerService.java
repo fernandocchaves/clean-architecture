@@ -1,6 +1,5 @@
 package com.github.fernandocchaves.architecture.customer.application.service;
 
-import com.github.fernandocchaves.architecture.customer.application.rest.dto.request.CreateCustomerRequest;
 import com.github.fernandocchaves.architecture.customer.application.rest.dto.request.UpdateCustomerRequest;
 import com.github.fernandocchaves.architecture.customer.application.rest.dto.response.CustomerResponse;
 import com.github.fernandocchaves.architecture.customer.domain.Address;

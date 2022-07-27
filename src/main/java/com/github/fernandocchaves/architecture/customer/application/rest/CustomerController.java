@@ -10,8 +10,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @RequiredArgsConstructor
 @RequestMapping("/api/customers")
@@ -27,7 +28,7 @@ public class CustomerController implements CustomerApi {
     @PostMapping
     @Override
     @ResponseStatus(HttpStatus.CREATED)
-    public CustomerResponse create(@RequestBody @Validated CreateCustomerRequest customerRequest) {
+    public CustomerResponse create(@RequestBody @Valid CreateCustomerRequest customerRequest) {
         return createCustomerService.execute(customerRequest);
     }
 

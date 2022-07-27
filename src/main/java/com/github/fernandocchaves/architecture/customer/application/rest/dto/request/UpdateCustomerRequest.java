@@ -10,7 +10,6 @@ import javax.validation.constraints.Size;
 @Builder
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
 public class UpdateCustomerRequest {
 

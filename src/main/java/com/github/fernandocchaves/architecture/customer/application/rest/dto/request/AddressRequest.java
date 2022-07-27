@@ -12,9 +12,9 @@ import javax.validation.constraints.Size;
 @Builder
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
 public class AddressRequest {
+
     @NotBlank
     @Size(max = 150)
     private String address1;

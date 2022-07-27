@@ -1,6 +1,5 @@
 package com.github.fernandocchaves.architecture.customer.application.service;
 
-import com.github.fernandocchaves.architecture.customer.application.rest.dto.request.AddressRequest;
 import com.github.fernandocchaves.architecture.customer.application.rest.dto.request.CreateCustomerRequest;
 import com.github.fernandocchaves.architecture.customer.application.rest.dto.response.CustomerResponse;
 import com.github.fernandocchaves.architecture.customer.domain.Address;
@@ -10,7 +9,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 
 @Slf4j
 @Service
@@ -42,5 +40,4 @@ public class CreateCustomerService {
         customerRepository.save(customer);
         return new CustomerResponse(customer);
     }
-
 }

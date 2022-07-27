@@ -2,6 +2,7 @@ package com.github.fernandocchaves.architecture.customer.application.rest.dto.re
 
 import lombok.*;
 
+import javax.validation.Valid;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -10,7 +11,6 @@ import javax.validation.constraints.Size;
 @Builder
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
 public class CreateCustomerRequest {
 
@@ -33,5 +33,6 @@ public class CreateCustomerRequest {
     private String phone;
 
     @NotNull
+    @Valid
     private AddressRequest address;
 }
